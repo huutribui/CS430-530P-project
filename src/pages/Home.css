@@ -1,0 +1,50 @@
+.Home {
+	color: white;
+}
+.Home .searchIcon {
+	position: relative;
+	margin-left: 10px;
+	font-size: 30px;
+	z-index: 1000;
+	color: black;
+	padding-right: 5px;
+}
+
+.Home .widthAdjustment {
+	width: 90%;
+	z-index: 1000;
+}
+
+.Home .searchBar {
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	width: 70%;
+	justify-content: center;
+	margin: 10px auto;
+	height: 40px;
+}
+
+.Home .searchInput {
+	border-radius: 30px;
+	border: none;
+	width: 100%;
+	height: 30px;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.Home .searchInput:focus {
+	outline: none;
+}
+
+.Home .widthAdjustmentDropdown {
+	width: 100%;
+	margin-top: 15px !important;
+	margin-left: 18px !important;
+}
+
+.Home .dropdown-item {
+	cursor: pointer;
+}
