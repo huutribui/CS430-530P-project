@@ -1,9 +1,21 @@
 import React from 'react';
+import './ForecastPage.css'
 
 const ForecastPage = () => {
     return (
         <div>
-            This is the forcast page
+        <div className='search'>
+        <input type="search" placeholder="Search" className='ser'/>
+        </div>
+        <div className="forecast-container">
+         
+        </div>
+        <div className="forecast-container">
+         
+        </div>
+        <div className="forecast-container">
+         
+        </div>
         </div>
     );
 };
