@@ -1,22 +1,30 @@
 .Home {
 	color: white;
 }
+
+.Home p {
+	margin: 0;
+	padding: 0;
+}
 .Home .searchIcon {
 	position: relative;
 	margin-left: 10px;
 	font-size: 30px;
-	z-index: 1000;
-	color: black;
+	color: white;
 	padding-right: 5px;
+	cursor: pointer;
+}
+
+.Home .searchIcon:hover {
+	color: aqua;
 }
 
 .Home .widthAdjustment {
 	width: 90%;
-	z-index: 1000;
 }
 
 .Home .searchBar {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.251);
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -33,6 +41,14 @@
 	height: 30px;
 	align-items: center;
 	padding-left: 10px;
+	background-color: transparent;
+	color: white;
+	font-size: 18px;
+}
+
+.Home .searchInput::placeholder {
+	color: rgba(255, 255, 255, 0.811);
+
 }
 
 .Home .searchInput:focus {
@@ -47,4 +63,45 @@
 
 .Home .dropdown-item {
 	cursor: pointer;
+}
+
+.Home .degreeUnits {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.Home .degreeUnit {
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+.Home .degreeUnit {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.Home .degreeUnit:hover {
+	color:aqua;
+}
+
+.Home .degreeUnit:first-of-type {
+	border-right: 1px solid white;
+}
+
+.Home .localDateTime {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 17px;
+    margin: 15px;
+}
+
+.Home .datetimeLocal {
+	padding: 0 10px;
+}
+
+.Home .datetimeLocal:first-of-type {
+	border-right: 1px solid white;
 }

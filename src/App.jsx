@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import ForecastPage from './pages/ForecastPage';
 import AboutUs from './pages/AboutUs';
 import NavBar from './components/NavBar';
+
 function App() {
 	return (
 		<div className="App">
