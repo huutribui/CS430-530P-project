@@ -171,8 +171,10 @@ const Home = () => {
 				<p className="datetimeLocal">{cityDateTime.date}</p>
 				<p className="datetimeLocal">Local Time {cityDateTime.time}</p>
 			</div>
-			<div className="localDateTime">
-
+			<div className="cityGeneralInfo">
+				<p>{cityData?.name}</p>
+				<p>{cityData?.main?.temp.toFixed()} &deg;{tempUnit === FAHRENHEIT_UNIT ? "F" : "C"}</p>
+				<p>{cityData?.weather?.[0]?.main}</p>
 			</div>
 		</div>
 	);
