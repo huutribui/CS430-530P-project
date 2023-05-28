@@ -176,6 +176,32 @@ const Home = () => {
 				<p>{cityData?.main?.temp.toFixed()} &deg;{tempUnit === FAHRENHEIT_UNIT ? "F" : "C"}</p>
 				<p>{cityData?.weather?.[0]?.main}</p>
 			</div>
+			<div className='metricsContainer'>
+			<div className="detailedInfo">
+				<h1 className='tempBlock'>Min Temp</h1>
+				<p>{cityData?.main?.temp_min.toFixed()} &deg;{tempUnit === FAHRENHEIT_UNIT ? "F" : "C"}</p>
+			</div>
+			<div className="detailedInfo">
+				<h1 className='tempBlock'>Max Temp</h1>
+				<p>{cityData?.main?.temp_max.toFixed()} &deg;{tempUnit === FAHRENHEIT_UNIT ? "F" : "C"}</p>
+			</div>
+			<div className="detailedInfo">
+				<h1 className='tempBlock'>Sun Rise</h1>
+				<p>{new Date(cityData?.sys?.sunrise*1000).toLocaleTimeString()}</p>
+			</div>
+			<div className="detailedInfo">
+				<h1 className='tempBlock'>Sun Set</h1>
+				<p>{new Date(cityData?.sys?.sunset*1000).toLocaleTimeString()}</p>
+			</div>
+			<div className="detailedInfo">
+				<h1 className='tempBlock'>Wind Speed</h1>
+				<p>{cityData?.wind?.speed.toFixed()}mph</p>
+			</div>
+			<div className="detailedInfo">
+				<h1 className='tempBlock'>Humidity</h1>
+				<p>{cityData?.main?.humidity.toFixed()}%</p>
+			</div>
+			</div>
 		</div>
 	);
 };
