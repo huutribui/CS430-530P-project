@@ -4,8 +4,8 @@ import './ForecastPage.css'
 const ForecastPage = () => {
     return (
         <div>
-        <div className='search'>
-        <input type="search" placeholder="Search" className='ser'/>
+        <div>
+        <input type="search" placeholder="Search" className='search'/>
         </div>
         <div className="forecast-container">
          

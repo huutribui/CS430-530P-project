@@ -3,14 +3,14 @@ import './AboutUs.css';
 import './Aboutusbackgr.png';
 const AboutUs = () => {
     return (
-        <div class="image">
+        <div>
         <h1>About Us</h1>
         <p>Welcome to our website!</p>
-        <div class="container">
-         This is Kishore.
+        <div className="aboutcontainer">
+         <p>This is Kishore.</p>
         </div>
-        <div class="container">
-         This is Nathan.
+        <div className="aboutcontainer">
+         <p>This is Nathan.</p>
         </div>
         <p>We are a team of passionate web developers.</p>
         </div>
