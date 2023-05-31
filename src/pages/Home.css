@@ -1,5 +1,6 @@
 .Home {
   color: white;
+  height: 100%;
 }
 
 .Home p {
@@ -131,4 +132,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.Home .redirectGraphPage {
+  margin-top: 50px;
 }
