@@ -33,11 +33,14 @@ const Home = () => {
 
 	useEffect(() => {
 		getCityData(city);
+	}, [city]);
+
+	useEffect(() => {
 		currentTimeInterval = setInterval(() => {
 			getLocalCityTime(cityData.timezone);
-		},8000);
+		}, 30000);
 		return () => clearInterval(currentTimeInterval);
-	}, [city]);
+	}, [cityData]);
 
 	useEffect(() => {
 		getCityData(city);
@@ -49,7 +52,6 @@ const Home = () => {
 		setTempUnit(CELSIUS_UNIT);
 		context.changeTempUnit(CELSIUS_UNIT);
 		console.log('tempUnit:', tempUnit);
-		getCityData(city);
 	};
 
 	const changeToFahrenheitUnit = (event) => {
@@ -95,10 +97,17 @@ const Home = () => {
 			const cityOffset = offset;
 			const localTime = now.getTime() + (utcOffset + cityOffset) * 1000; // Multiply by 1000 to convert seconds to milliseconds
 			const cityTime = new Date(localTime);
-
 			const datetimeObject = {};
-			datetimeObject.date = cityTime.toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
-			datetimeObject.time = cityTime.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+			datetimeObject.date = cityTime.toLocaleDateString('en-us', {
+				weekday: 'long',
+				year: 'numeric',
+				month: 'short',
+				day: 'numeric',
+			});
+			datetimeObject.time = cityTime.toLocaleTimeString([], {
+				hour: '2-digit',
+				minute: '2-digit',
+			});
 			setCityDateTime(datetimeObject);
 		} catch (err) {
 			console.log(err);
@@ -173,7 +182,10 @@ const Home = () => {
 			</div>
 			<div className="cityGeneralInfo">
 				<p>{cityData?.name}</p>
-				<p>{cityData?.main?.temp.toFixed()} &deg;{tempUnit === FAHRENHEIT_UNIT ? "F" : "C"}</p>
+				<p>
+					{cityData?.main?.temp.toFixed()} &deg;
+					{tempUnit === FAHRENHEIT_UNIT ? 'F' : 'C'}
+				</p>
 				<p>{cityData?.weather?.[0]?.main}</p>
 			</div>
 			<div className='metricsContainer'>
