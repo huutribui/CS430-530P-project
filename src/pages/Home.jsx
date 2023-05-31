@@ -135,6 +135,12 @@ const Home = () => {
 		setSearchedCity(searchedCity);
 	};
 
+	const forecastPageRedirect = (event) => {
+		event.preventDefault();
+		event.stopPropagation();
+		navigate("/forecast");
+	}
+
 	return (
 		<div className="Home">
 			<div className="searchBar">
@@ -214,6 +220,7 @@ const Home = () => {
 				<p>{cityData?.main?.humidity.toFixed()}%</p>
 			</div>
 			</div>
+			<div className="btn btn-secondary redirectGraphPage" onClick={forecastPageRedirect}>More Graph Details</div>
 		</div>
 	);
 };
