@@ -1,107 +1,134 @@
 .Home {
-	color: white;
+  color: white;
 }
 
 .Home p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .Home .searchIcon {
-	position: relative;
-	margin-left: 10px;
-	font-size: 30px;
-	color: white;
-	padding-right: 5px;
-	cursor: pointer;
+  position: relative;
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+  padding-right: 5px;
+  cursor: pointer;
 }
 
 .Home .searchIcon:hover {
-	color: aqua;
+  color: aqua;
 }
 
 .Home .widthAdjustment {
-	width: 90%;
+  width: 90%;
 }
 
 .Home .searchBar {
-	background-color: rgba(255, 255, 255, 0.251);
-	border-radius: 20px;
-	display: flex;
-	align-items: center;
-	width: 70%;
-	justify-content: center;
-	margin: 10px auto;
-	height: 40px;
+  background-color: rgba(255, 255, 255, 0.251);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin: 10px auto;
+  height: 40px;
 }
 
 .Home .searchInput {
-	border-radius: 30px;
-	border: none;
-	width: 100%;
-	height: 30px;
-	align-items: center;
-	padding-left: 10px;
-	background-color: transparent;
-	color: white;
-	font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
 }
 
 .Home .searchInput::placeholder {
-	color: rgba(255, 255, 255, 0.811);
-
+  color: rgba(255, 255, 255, 0.811);
 }
 
 .Home .searchInput:focus {
-	outline: none;
+  outline: none;
 }
 
 .Home .widthAdjustmentDropdown {
-	width: 100%;
-	margin-top: 15px !important;
-	margin-left: 18px !important;
+  width: 100%;
+  margin-top: 15px !important;
+  margin-left: 18px !important;
 }
 
 .Home .dropdown-item {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .Home .degreeUnits {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .Home .degreeUnit {
-	padding: 0 10px;
-	cursor: pointer;
-	font-size: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .Home .degreeUnit {
-	padding: 0 10px;
-	cursor: pointer;
+  padding: 0 10px;
+  cursor: pointer;
 }
 
 .Home .degreeUnit:hover {
-	color:aqua;
+  color: aqua;
 }
 
 .Home .degreeUnit:first-of-type {
-	border-right: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .Home .localDateTime {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-right: 17px;
-    margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 17px;
+  margin: 15px;
 }
 
 .Home .datetimeLocal {
-	padding: 0 10px;
+  padding: 0 10px;
 }
 
 .Home .datetimeLocal:first-of-type {
-	border-right: 1px solid white;
+  border-right: 1px solid white;
+}
+.detailedInfo {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 20vh;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: snow;
+}
+.detailedInfo p {
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.tempBlock {
+  color: black;
+  font-size: 30px;
+}
+.metricsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }

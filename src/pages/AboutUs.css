@@ -1,11 +1,11 @@
-.container {
+.aboutcontainer {
   box-sizing: content-box;
   text-align: left;
-  height: 40vh;
+  height: 30vh;
   border: 0.5px solid black;
   margin-top: 10px;
   background-color: snow;
 }
-.image {
-  background-image: url("./Aboutusbackgr.png");
+.aboutcontainer p {
+  color: black;
 }
