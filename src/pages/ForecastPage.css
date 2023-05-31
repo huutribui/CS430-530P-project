@@ -10,3 +10,24 @@
   margin-top: 10px;
   width: 30vw;
 }
+
+
+.forecastPage .degreeUnits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.forecastPage .degreeUnit {
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.forecastPage .degreeUnit:hover {
+  color: aqua;
+}
+
+.forecastPage .degreeUnit:first-of-type {
+  border-right: 1px solid white;
+}
