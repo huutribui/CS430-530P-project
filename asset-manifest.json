@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CS430-530P-project/static/css/main.6f73bf0d.css",
+    "main.js": "/CS430-530P-project/static/js/main.64be7920.js",
+    "static/media/Aboutusbackgr.png": "/CS430-530P-project/static/media/Aboutusbackgr.cfa479eaad2e958153fe.png",
+    "static/media/sunset.jpg": "/CS430-530P-project/static/media/sunset.ab19eb6fc568e5c0ff4d.jpg",
+    "index.html": "/CS430-530P-project/index.html",
+    "main.6f73bf0d.css.map": "/CS430-530P-project/static/css/main.6f73bf0d.css.map",
+    "main.64be7920.js.map": "/CS430-530P-project/static/js/main.64be7920.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f73bf0d.css",
+    "static/js/main.64be7920.js"
+  ]
+}
