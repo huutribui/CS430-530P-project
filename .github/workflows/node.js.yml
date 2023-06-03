@@ -27,4 +27,4 @@ jobs:
         with:
           branch: gh-pages
           folder: build
-          github-token: ${{ secrets.SECRET_TOKEN }}
+          ssh-key: ${{ secrets.SECRET_TOKEN }}
