@@ -26,7 +26,6 @@
   width: 30vw;
 }
 
-
 .forecastPage .degreeUnits {
   display: flex;
   flex-direction: row;
@@ -50,4 +49,29 @@
 .forecastPage .graphLabel {
   font-size: 18px;
   font-weight: 700;
+}
+.hourlyData {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.each3hours {
+  box-sizing: border-box;
+  width: 20vw;
+  height: 20vh;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+.timeDisplay {
+  font-size: medium;
+  display: flex;
+  flex-wrap: wrap;
 }
