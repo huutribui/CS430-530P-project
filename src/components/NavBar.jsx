@@ -7,17 +7,17 @@ const NavBar = () => {
 
 	const handleHomePageClick = (event) => {
 		event.preventDefault();
-		navigate('/');
+		navigate('/CS430-530P-project/');
 	};
 
 	const handleForecastClick = (event) => {
 		event.preventDefault();
-		navigate('/forecast');
+		navigate('/CS430-530P-project/forecast');
 	};
 
 	const handleAboutUsClick = (event) => {
 		event.preventDefault();
-		navigate('/aboutUs');
+		navigate('/CS430-530P-project/aboutUs');
 	};
 
 	return (
