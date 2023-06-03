@@ -109,9 +109,25 @@ const Home = () => {
 				minute: '2-digit',
 			});
 			setCityDateTime(datetimeObject);
+			
 		} catch (err) {
 			console.log(err);
 			alert(`Unable to get current time for ${city} city`);
+			
+		}
+	};
+	const getLocalTime = (offset,inputTime) => {
+		try {
+			const now = new Date(inputTime);
+			const utcOffset = now.getTimezoneOffset() * 60; // Convert minutes to seconds
+			const cityOffset = offset;
+			const localTime = now.getTime() + (utcOffset + cityOffset) * 1000; // Multiply by 1000 to convert seconds to milliseconds
+			const cityTime = new Date(localTime);
+			return cityTime;
+		} catch (err) {
+			console.log(err);
+			alert(`Unable to get current time for ${city} city`);
+			return null;
 		}
 	};
 
@@ -205,11 +221,11 @@ const Home = () => {
 			</div>
 			<div className="detailedInfo">
 				<h1 className='tempBlock'>Sun Rise</h1>
-				<p>{new Date(cityData?.sys?.sunrise*1000).toLocaleTimeString()}</p>
+				<p>{getLocalTime(cityData?.timezone,cityData?.sys?.sunrise*1000).toLocaleTimeString()}</p>
 			</div>
 			<div className="detailedInfo">
 				<h1 className='tempBlock'>Sun Set</h1>
-				<p>{new Date(cityData?.sys?.sunset*1000).toLocaleTimeString()}</p>
+				<p>{getLocalTime(cityData?.timezone,cityData?.sys?.sunset*1000).toLocaleTimeString()}</p>
 			</div>
 			<div className="detailedInfo">
 				<h1 className='tempBlock'>Wind Speed</h1>
