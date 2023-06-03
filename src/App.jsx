@@ -17,9 +17,9 @@ function App() {
 				<NavBar />
 				<div className='App-container'>
 					<Switch>
-						<Route exact path="/" element={<Home />} />
-						<Route exact path="/forecast" element={<ForecastPage />} />
-						<Route exact path="/aboutUs" element={<AboutUs />} />
+						<Route exact path="/CS430-530P-project/" element={<Home />} />
+						<Route exact path="/CS430-530P-project/forecast" element={<ForecastPage />} />
+						<Route exact path="/CS430-530P-project/aboutUs" element={<AboutUs />} />
 					</Switch>
 				</div>
 			</Router>
