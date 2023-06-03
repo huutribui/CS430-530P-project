@@ -154,7 +154,7 @@ const Home = () => {
 	const forecastPageRedirect = (event) => {
 		event.preventDefault();
 		event.stopPropagation();
-		navigate("/forecast");
+		navigate("/CS430-530P-project/forecast");
 	}
 
 	return (
