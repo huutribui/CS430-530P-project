@@ -287,8 +287,9 @@ const ForecastPage = () => {
 
 	return (
 		<div className="forecastPage">
+			
 			<div>
-				{/* <input type="search" placeholder="Search" className="search" /> */}
+				{<input type="search" placeholder="Search" className="search" /> }
                 <input
 						type="text"
 						id="search"
@@ -323,11 +324,6 @@ const ForecastPage = () => {
 					&deg;F
 				</p>
 			</div>
-
-			<div className="minmaxTempForecast">
-                <div className="graphLabel">Min Max Temperature Graph for the next 24 Hours</div>
-                {data24Hours && renderLineChart()}
-            </div>
             <div className='hourlyData'>
             {data24Hours && Array.isArray(data24Hours.list) && data24Hours.list.map((data, index) => (
             <div key={index} className='each3hours'>
@@ -337,6 +333,11 @@ const ForecastPage = () => {
             </div>
             ))}
             </div>
+			<div className="minmaxTempForecast">
+                <div className="graphLabel">Min Max Temperature Graph for the next 24 Hours</div>
+                {data24Hours && renderLineChart()}
+            </div>
+            
 		</div>
 	);
 };

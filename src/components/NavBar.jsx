@@ -28,7 +28,7 @@ const NavBar = () => {
 						class="navbar-brand navbarLogoLightTheme navbarLeft"
 						onClick={handleHomePageClick}
 					>
-						Weather Forcast
+						Weather Forecast
 					</a>
 					<button
 						class="navbar-toggler bg-secondary"
@@ -61,7 +61,7 @@ const NavBar = () => {
 									aria-current="page"
 									onClick={handleForecastClick}
 								>
-									Forcast Details
+									Forecast Details
 								</a>
 							</li>
 							<li class="nav-item">
