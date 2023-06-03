@@ -116,7 +116,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* background-color: snow; */
   border: 1px solid;
 }
 .detailedInfo p {
@@ -138,4 +137,7 @@
 
 .Home .redirectGraphPage {
   margin-top: 50px;
+}
+.Home .cityName {
+  font-size: 40px;
 }

@@ -287,9 +287,8 @@ const ForecastPage = () => {
 
 	return (
 		<div className="forecastPage">
-			
-			<div>
-				{<input type="search" placeholder="Search" className="search" /> }
+			<div className="searchBar">
+				<div className="dropdown widthAdjustment">
                 <input
 						type="text"
 						id="search"
@@ -300,6 +299,7 @@ const ForecastPage = () => {
 						value={searchedCity}
 						onChange={handleSearchChange}
 						onKeyDown={handleSearchSubmit}
+                        autocomplete="off"
 					/>
 					<ul className="dropdown-menu mt-2 widthAdjustmentDropdown bg-light">
 						{recentlySearch.map((city) => (
@@ -313,7 +313,11 @@ const ForecastPage = () => {
 							</li>
 						))}
 					</ul>
-			</div>
+                    </div>
+                    <label htmlFor="search">
+					<SearchIcon alt="searchIcon" className="searchIcon" />
+				</label>
+			 </div>
 
 			<div className="degreeUnits">
 				<p className="degreeUnit" onClick={changeToCelciusUnit}>
@@ -323,6 +327,14 @@ const ForecastPage = () => {
 				<p className="degreeUnit" onClick={changeToFahrenheitUnit}>
 					&deg;F
 				</p>
+			</div>
+            <div className="cityGeneralInfo">
+				<p className='cityName'>{cityData?.name}</p>
+				<p>
+					{cityData?.main?.temp.toFixed()} &deg;
+					{tempUnit === FAHRENHEIT_UNIT ? 'F' : 'C'}
+				</p>
+				<p>{cityData?.weather?.[0]?.main}</p>
 			</div>
             <div className='hourlyData'>
             {data24Hours && Array.isArray(data24Hours.list) && data24Hours.list.map((data, index) => (

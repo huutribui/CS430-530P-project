@@ -171,6 +171,7 @@ const Home = () => {
 						value={searchedCity}
 						onChange={handleSearchChange}
 						onKeyDown={handleSearchSubmit}
+						autocomplete="off"
 					/>
 					<ul className="dropdown-menu mt-2 widthAdjustmentDropdown bg-light">
 						{recentlySearch.map((city) => (
@@ -203,12 +204,12 @@ const Home = () => {
 				<p className="datetimeLocal">Local Time {cityDateTime.time}</p>
 			</div>
 			<div className="cityGeneralInfo">
-				<p>{cityData?.name}</p>
-				<p>
+				<p className='cityName'>{cityData?.name}</p>
+				<p className='cityName'>
 					{cityData?.main?.temp.toFixed()} &deg;
 					{tempUnit === FAHRENHEIT_UNIT ? 'F' : 'C'}
 				</p>
-				<p>{cityData?.weather?.[0]?.main}</p>
+				<p className='cityName'>{cityData?.weather?.[0]?.main}</p>
 			</div>
 			<div className='metricsContainer'>
 			<div className="detailedInfo">

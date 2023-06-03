@@ -75,3 +75,39 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.searchBar {
+  background-color: rgba(255, 255, 255, 0.251);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin: 10px auto;
+  height: 40px;
+}
+.searchInput {
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.811);
+}
+.widthAdjustment {
+  width: 90%;
+}
+.widthAdjustmentDropdown {
+  width: 100%;
+  margin-top: 15px !important;
+  margin-left: 18px !important;
+}
+.cityName {
+  font-size: 50px;
+}
