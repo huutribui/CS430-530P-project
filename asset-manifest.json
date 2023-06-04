@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/CS430-530P-project/static/css/main.6d49120a.css",
-    "main.js": "/CS430-530P-project/static/js/main.462b8b0b.js",
+    "main.css": "/CS430-530P-project/static/css/main.34072db7.css",
+    "main.js": "/CS430-530P-project/static/js/main.382d1b0e.js",
+    "static/media/darkbackground.jpg": "/CS430-530P-project/static/media/darkbackground.a8ddfa75a52b2d08e347.jpg",
     "static/media/sunset.jpg": "/CS430-530P-project/static/media/sunset.ab19eb6fc568e5c0ff4d.jpg",
     "static/media/nathancover.jpg": "/CS430-530P-project/static/media/nathancover.ae35204baff1b5002620.jpg",
+    "static/media/KishorePhoto.jpg": "/CS430-530P-project/static/media/KishorePhoto.0d7968f245e339036e23.jpg",
     "index.html": "/CS430-530P-project/index.html",
-    "main.6d49120a.css.map": "/CS430-530P-project/static/css/main.6d49120a.css.map",
-    "main.462b8b0b.js.map": "/CS430-530P-project/static/js/main.462b8b0b.js.map"
+    "main.34072db7.css.map": "/CS430-530P-project/static/css/main.34072db7.css.map",
+    "main.382d1b0e.js.map": "/CS430-530P-project/static/js/main.382d1b0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d49120a.css",
-    "static/js/main.462b8b0b.js"
+    "static/css/main.34072db7.css",
+    "static/js/main.382d1b0e.js"
   ]
 }
