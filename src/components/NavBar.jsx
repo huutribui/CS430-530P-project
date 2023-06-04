@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ isDarkTheme, toggleTheme }) => {
 	const navigate = useNavigate();
 
 	const handleHomePageClick = (event) => {
@@ -72,6 +72,17 @@ const NavBar = () => {
 									About Us
 								</a>
 							</li>
+							<li className='nav-item'>
+							<button className="theme-toggle-button" onClick={toggleTheme}>
+							<a 
+							   className="nav-link navbarTextLightTheme" 
+							   onClick={toggleTheme}
+							>
+                             Toggle Theme
+							 </a>
+                            </button>
+							</li>
+							
 						</ul>
 					</div>
 				</div>

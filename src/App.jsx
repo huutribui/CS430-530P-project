@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import {
 	BrowserRouter as Router,
 	Routes as Switch,
@@ -11,10 +12,15 @@ import AboutUs from './pages/AboutUs';
 import NavBar from './components/NavBar';
 
 function App() {
+	const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+	const toggleTheme = () => {
+	  setIsDarkTheme(!isDarkTheme);
+	};
 	return (
-		<div className="App">
-			<Router>
-				<NavBar />
+		<div className={`App ${isDarkTheme ? 'dark-theme' : 'light-theme'}`}>
+      <Router>
+        <NavBar isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
 				<div className='App-container'>
 					<Switch>
 						<Route exact path="/" element={<Home />} />

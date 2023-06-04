@@ -45,7 +45,7 @@ const Home = () => {
 	useEffect(() => {
 		getCityData(city);
 	}, [tempUnit]);
-
+	
 	const changeToCelciusUnit = (event) => {
 		event.preventDefault();
 		event.stopPropagation();
@@ -238,6 +238,7 @@ const Home = () => {
 			</div>
 			</div>
 			<div className="btn btn-secondary redirectGraphPage" onClick={forecastPageRedirect}>More Graph Details</div>
+    
 		</div>
 	);
 };
