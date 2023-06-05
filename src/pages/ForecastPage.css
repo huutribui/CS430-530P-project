@@ -1,6 +1,6 @@
 .forecastPage {
-  overflow-y: scroll;
   height: 100%;
+  overflow: auto;
 }
 
 .forecast-container {
@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .search {
   margin-top: 10px;
   width: 30vw;
@@ -74,4 +73,98 @@
   font-size: medium;
   display: flex;
   flex-wrap: wrap;
+}
+
+.searchBar {
+  background-color: rgba(255, 255, 255, 0.251);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin: 10px auto;
+  height: 40px;
+}
+.searchInput {
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  padding-left: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.811);
+}
+.widthAdjustment {
+  width: 90%;
+}
+.widthAdjustmentDropdown {
+  width: 100%;
+  margin-top: 15px !important;
+  margin-left: 18px !important;
+}
+.cityName {
+  font-size: 50px;
+}
+@media (max-width: 800px) {
+  .search {
+    width: 70vw;
+  }
+
+  .each3hours {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  .forecastPage .degreeUnits {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .forecastPage .degreeUnit {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .forecastPage .graphLabel {
+    text-align: center;
+  }
+  .hourlyData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .searchBar {
+    width: 90%;
+  }
+
+  .cityName {
+    font-size: 30px;
+  }
+  .forecastPage .minmaxTempForecast {
+    box-sizing: border-box;
+    margin: 0;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }

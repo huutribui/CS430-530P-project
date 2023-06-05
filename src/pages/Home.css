@@ -113,10 +113,9 @@
   margin: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  /* background-color: snow; */
   border: 1px solid;
 }
 .detailedInfo p {
@@ -138,4 +137,41 @@
 
 .Home .redirectGraphPage {
   margin-top: 50px;
+}
+.Home .cityName {
+  font-size: 40px;
+}
+@media (max-width: 600px) {
+  .Home .widthAdjustment {
+    width: 100%;
+  }
+
+  .Home .searchBar {
+    width: 90%;
+  }
+  .each3hours {
+    box-sizing: border-box;
+    width: 20vw;
+    height: 20vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  .detailedInfo {
+    width: 90vw;
+    height: auto;
+  }
+
+  .metricsContainer {
+    justify-content: flex-start;
+  }
+
+  .Home .cityName {
+    font-size: 30px;
+  }
 }

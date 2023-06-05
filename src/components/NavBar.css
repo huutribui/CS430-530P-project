@@ -1,47 +1,50 @@
 .navBarContainer {
-	box-sizing: content-box;
-	display: flex;
-	position: sticky;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	height: 50px;
-	width: 100%;
-	top: 0;
-	z-index: 1;
-	border-top: 2px solid rgba(255, 255, 255, 0.253);
-	border-bottom: 2px solid rgba(255, 255, 255, 0.253);
+  box-sizing: content-box;
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  border-top: 2px solid rgba(255, 255, 255, 0.253);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.253);
 }
 
 .navbarLogoLightTheme {
-	color: rgb(219, 219, 219) !important;
-	font-size: 25px !important;
-	cursor: pointer;
-	margin-left: 20px;
-	margin-right: 60px !important;
+  color: rgb(219, 219, 219) !important;
+  font-size: 25px !important;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 100px !important;
 }
 
 .navbarLogoLightTheme:hover {
-	color: white !important;
-	cursor: pointer;
-	text-shadow: 0 1px 2px rgb(255, 255, 255);
-	animation-duration: 1s;
+  color: white !important;
+  cursor: pointer;
+  text-shadow: 0 1px 2px rgb(255, 255, 255);
+  animation-duration: 1s;
 }
 
 .navbarTextLightTheme {
-	color: rgb(219, 219, 219) !important;
-	font-size: 20px !important;
-	cursor: pointer;
+  color: rgb(219, 219, 219) !important;
+  font-size: 20px !important;
+  cursor: pointer;
 }
 
 .navbarTextLightTheme:hover {
-	color: white !important;
-	font-size: 20px !important;
-	cursor: pointer;
-	text-shadow: 0 1px 2px rgb(255, 255, 255);
-	animation-duration: 1s;
+  color: white !important;
+  font-size: 20px !important;
+  cursor: pointer;
+  text-shadow: 0 1px 2px rgb(255, 255, 255);
+  animation-duration: 1s;
 }
 
 .nav-item {
-	margin-left: 50px;
+  margin-left: 50px;
+}
+.theme-toggle-button {
+  background-color: gray;
 }

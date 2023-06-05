@@ -260,6 +260,7 @@ const ForecastPage = () => {
 				padding: 0,
 			},
 			responsive: true,
+            
 		};
 
 		const labels = getHoursLabel(data24Hours.list);
@@ -287,8 +288,8 @@ const ForecastPage = () => {
 
 	return (
 		<div className="forecastPage">
-			<div>
-				{/* <input type="search" placeholder="Search" className="search" /> */}
+			<div className="searchBar">
+				<div className="dropdown widthAdjustment">
                 <input
 						type="text"
 						id="search"
@@ -299,6 +300,7 @@ const ForecastPage = () => {
 						value={searchedCity}
 						onChange={handleSearchChange}
 						onKeyDown={handleSearchSubmit}
+                        autocomplete="off"
 					/>
 					<ul className="dropdown-menu mt-2 widthAdjustmentDropdown bg-light">
 						{recentlySearch.map((city) => (
@@ -312,7 +314,11 @@ const ForecastPage = () => {
 							</li>
 						))}
 					</ul>
-			</div>
+                    </div>
+                    <label htmlFor="search">
+					<SearchIcon alt="searchIcon" className="searchIcon" />
+				</label>
+			 </div>
 
 			<div className="degreeUnits">
 				<p className="degreeUnit" onClick={changeToCelciusUnit}>
@@ -323,20 +329,28 @@ const ForecastPage = () => {
 					&deg;F
 				</p>
 			</div>
-
-			<div className="minmaxTempForecast">
-                <div className="graphLabel">Min Max Temperature Graph for the next 24 Hours</div>
-                {data24Hours && renderLineChart()}
-            </div>
+            <div className="cityGeneralInfo">
+				<p className='cityName'>{cityData?.name}</p>
+				<p>
+					{cityData?.main?.temp.toFixed()} &deg;
+					{tempUnit === FAHRENHEIT_UNIT ? 'F' : 'C'}
+				</p>
+				<p>{cityData?.weather?.[0]?.main}</p>
+			</div>
             <div className='hourlyData'>
             {data24Hours && Array.isArray(data24Hours.list) && data24Hours.list.map((data, index) => (
             <div key={index} className='each3hours'>
             <h2 className='timeDisplay'>{`${getHoursLabel(data24Hours.list)[index]}`}</h2>
-            <img src={`https://openweathermap.org/img/wn/${data24Hours.list[index].weather[0].icon}.png`} />
+            <img src={`https://openweathermap.org/img/wn/${data24Hours.list[index].weather[0].icon}.png`}/>
             <h2 className='timeDisplay'>{data24Hours.list[index].weather[0].main}</h2>
             </div>
             ))}
             </div>
+			<div className="minmaxTempForecast">
+                <div className="graphLabel">Min Max Temperature Graph for the next 24 Hours</div>
+                {data24Hours && renderLineChart()}
+            </div>
+            
 		</div>
 	);
 };
