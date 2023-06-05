@@ -93,3 +93,50 @@
 .aboutUs .aboutMeLink {
   cursor: pointer;
 }
+@media (max-width: 1100px) {
+  .aboutUs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5px;
+    overflow: auto;
+  }
+  .aboutUs .imageIconDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: medium;
+  }
+  .aboutUs .aboutUsContent {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .aboutUs .aboutUsMember {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUs .generalInformation {
+    text-align: center;
+    font-size: smaller;
+    margin: auto;
+    padding: 10px;
+  }
+  .aboutUs .name {
+    font-size: medium;
+  }
+  .aboutUs .coverImg {
+    width: 90%;
+    height: 100px;
+    max-width: 100%;
+  }
+
+  .aboutUs .aboutUsSubHeader {
+    width: 90%;
+    font-size: medium;
+  }
+  .aboutMeData {
+    font-size: small;
+  }
+}

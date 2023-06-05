@@ -78,7 +78,7 @@ const NavBar = ({ isDarkTheme, toggleTheme }) => {
 							   className="nav-link navbarTextLightTheme" 
 							   onClick={toggleTheme}
 							>
-                             Toggle Theme
+                             Change Theme
 							 </a>
                             </button>
 							</li>

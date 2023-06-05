@@ -1,6 +1,6 @@
 .forecastPage {
-  overflow-y: scroll;
   height: 100%;
+  overflow: auto;
 }
 
 .forecast-container {
@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .search {
   margin-top: 10px;
   width: 30vw;
@@ -110,4 +109,62 @@
 }
 .cityName {
   font-size: 50px;
+}
+@media (max-width: 800px) {
+  .search {
+    width: 70vw;
+  }
+
+  .each3hours {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  .forecastPage .degreeUnits {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .forecastPage .degreeUnit {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .forecastPage .graphLabel {
+    text-align: center;
+  }
+  .hourlyData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .searchBar {
+    width: 90%;
+  }
+
+  .cityName {
+    font-size: 30px;
+  }
+  .forecastPage .minmaxTempForecast {
+    box-sizing: border-box;
+    margin: 0;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }

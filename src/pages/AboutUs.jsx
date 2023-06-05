@@ -167,7 +167,7 @@ const AboutUs = () => {
 								</a>
 							</div>
 							<p className="aboutUsSubHeader">Interests</p>
-							<p className="aboutMeData1">
+							<p className="aboutMeData">
                              <li>Web Designing</li>
                              <li>Web Development</li>
                              <li>FullStack</li>

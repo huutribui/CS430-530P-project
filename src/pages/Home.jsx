@@ -45,7 +45,7 @@ const Home = () => {
 	useEffect(() => {
 		getCityData(city);
 	}, [tempUnit]);
-	
+
 	const changeToCelciusUnit = (event) => {
 		event.preventDefault();
 		event.stopPropagation();

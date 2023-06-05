@@ -260,6 +260,7 @@ const ForecastPage = () => {
 				padding: 0,
 			},
 			responsive: true,
+            
 		};
 
 		const labels = getHoursLabel(data24Hours.list);
@@ -340,7 +341,7 @@ const ForecastPage = () => {
             {data24Hours && Array.isArray(data24Hours.list) && data24Hours.list.map((data, index) => (
             <div key={index} className='each3hours'>
             <h2 className='timeDisplay'>{`${getHoursLabel(data24Hours.list)[index]}`}</h2>
-            <img src={`https://openweathermap.org/img/wn/${data24Hours.list[index].weather[0].icon}.png`} />
+            <img src={`https://openweathermap.org/img/wn/${data24Hours.list[index].weather[0].icon}.png`}/>
             <h2 className='timeDisplay'>{data24Hours.list[index].weather[0].main}</h2>
             </div>
             ))}
