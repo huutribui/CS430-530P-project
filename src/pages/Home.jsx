@@ -205,11 +205,11 @@ const Home = () => {
 			</div>
 			<div className="cityGeneralInfo">
 				<p className='cityName'>{cityData?.name}</p>
-				<p className='cityName'>
+				<p className='cityNameTemp'>
 					{cityData?.main?.temp.toFixed()} &deg;
 					{tempUnit === FAHRENHEIT_UNIT ? 'F' : 'C'}
 				</p>
-				<p className='cityName'>{cityData?.weather?.[0]?.main}</p>
+				<p className='cityNameTemp'>{cityData?.weather?.[0]?.main}</p>
 			</div>
 			<div className='metricsContainer'>
 			<div className="detailedInfo">
@@ -237,7 +237,7 @@ const Home = () => {
 				<p>{cityData?.main?.humidity.toFixed()}%</p>
 			</div>
 			</div>
-			<div className="btn btn-secondary redirectGraphPage" onClick={forecastPageRedirect}>More Graph Details</div>
+			<div className="btn btn-secondary redirectGraphPage" onClick={forecastPageRedirect}>More Forecast Details</div>
     
 		</div>
 	);

@@ -136,10 +136,13 @@
 }
 
 .Home .redirectGraphPage {
-  margin-top: 50px;
+  margin-top: 15px;
 }
 .Home .cityName {
   font-size: 40px;
+}
+.Home .cityNameTemp {
+  font-size: 20px;
 }
 @media (max-width: 600px) {
   .Home .widthAdjustment {
