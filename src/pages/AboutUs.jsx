@@ -10,7 +10,7 @@ const NATHAN_GITHUB_URL = 'https://github.com/NathanBuiPDX';
 
 
 const KISHORE_LINKEDIN_URL =
-	'https://www.linkedin.com/in/sai-kishore-raju-k-771110262/';
+	'https://www.linkedin.com/in/kishore-k-771110262/';
 const KISHORE_GITHUB_URL = 'https://github.com/KSKRLIFE';
 
 const AboutUs = () => {
@@ -126,7 +126,7 @@ const AboutUs = () => {
 							alt="Kishore Photo"
 						/>
 						<div className="generalInformation">
-							<div className="name">SAI KISHORE</div>
+							<div className="name">KISHORE KONDURU</div>
 							<div className="aboutUsIcons">
 								<a
 									className="aboutMeLink"
@@ -178,9 +178,8 @@ const AboutUs = () => {
 					<div className="aboutMeText">
 						<p className="aboutUsSubHeader">About Me</p>
 						<div className="aboutMeData">
-                        I am Sai Kishore(he/him), Graduate student at PSU majoring in Computer Science. 
-                        Few of my academic projects include Internet Relay Chat, Full stack photo viewer application. 
-                        I enjoy playing and watching cricket. 
+                        I am Kishore Konduru(he/him) - Software Engineer and a web development enthusiast. 
+                        Experienced in Full stack web development, ServiceNow development, API Integrations.
 						</div>
 					</div>
 				</div>
